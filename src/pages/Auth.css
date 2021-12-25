@@ -1,0 +1,83 @@
+.auth-page{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #F9FAFB;
+}
+
+.auth-page-wrapper{
+    width: 90%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    align-items: center;
+    gap:45px;
+    
+}
+
+/* .auth-image{
+    width: 450px;
+    height: 450px;
+} */
+
+.auth-image img{
+    width: 100%;
+    height: auto;
+}
+
+.auth-form{
+    width: 373px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 21.0037px 31.5056px rgba(147, 153, 176, 0.15);
+}
+
+.auth-form-wrapper{
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app__logo{
+    margin-bottom: 15px;
+}
+
+.form-fields{
+    width: 100%;
+    
+}
+
+.form-fields .custom-field{
+    width: 98%;
+    height: 35px;
+    margin-bottom: 15px;
+    background-color: #dbdbdb;
+    border-radius: 6px;
+}
+
+.custom-field input{
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    background-color: transparent;
+    outline: none;
+    padding-left: 12px;
+    border-radius: inherit;
+}
+
+.auth_btn{
+    width: 98%;
+    height: 42px;
+
+    background: linear-gradient(269.53deg, #A336BD -4.74%, #FF387D 29.23%, #FF5D34 70.94%, #FFAA1B 105.94%);
+    border-radius: 6px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+
+}

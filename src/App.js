@@ -1,25 +1,96 @@
-import logo from './logo.svg';
+import { connect } from "react-redux";
+import React from "react"
+import {BrowserRouter as Router,Switch,Route,useHistory} from "react-router-dom";
 import './App.css';
+import Bookmark from "./pages/Bookmark";
+import Chat from "./pages/Chat";
+import Explore from "./pages/Explore";
+import Home from './pages/Home';
+import Likes from "./pages/Likes";
+import Stories from "./pages/Stories";
+import Auth from "./pages/Auth";
+function App({user}) {
+  
 
-function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+  <div>
+  
+  
+  <Switch>
+  <Route exact path="/">
+    <Home/>
+    </Route>
+
+  
+
+    <Route exact path="/chats">
+    <Chat/>
+    </Route>
+
+    <Route exact path="/explore">
+    <Explore/>
+    </Route>
+
+    <Route exact path="/likes">
+    <Likes/>
+    </Route>
+
+    <Route exact path="/bookmark">
+    <Bookmark/>
+    </Route>
+
+    {/* <Route exact path="/upload">
+    <Upload scrolled={scrolled} top={top} handleScroll={handleScroll}/>
+    </Route>
+    <Route exact path="/about">
+    <About scrolled={scrolled} top={top} handleScroll={handleScroll}/>
+    </Route> */}
+
+   
+
+  
+
+   
+
+    <Route
+           exact
+            path="/story/:id"
+            render={(props) => {
+              const id = props.match.params.id;
+              return <Stories id={id && id} />;
+            }}
+           
+          />
+
+
+<Route
+           exact
+            path="/auth/:type"
+            render={(props) => {
+              const type= props.match.params.type;
+              return <Auth type={type && type} />;
+            }}
+           
+          />
+    
+
+       
+         
+          
+
+   
+   
+  </Switch>
+</div>
+</Router>
   );
 }
 
-export default App;
+
+const mapStateToProps = (state) => ({
+  user:state.appReducer.user
+})
+export default connect(mapStateToProps,null)(App);

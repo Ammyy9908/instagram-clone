@@ -1,0 +1,134 @@
+.post-card{
+  cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0px 10px 40px rgba(222, 230, 237, 0.4);
+    border-radius: 30px;
+}
+
+
+.post-card-wrapper{
+    width: 95%;
+    margin: 10px auto;
+}
+
+.post-author-avatar{
+    width: 40px;
+    height: 40px;
+}
+.post-author-avatar > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-card-header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+}
+
+.post-author{
+    display: flex;
+    align-items: center;
+    gap:12px;
+}
+
+.post-author-meta h2{
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+
+color: #1B1D28;
+}
+.post-author-meta span{
+    font-weight: 500;
+font-size: 10px;
+line-height: 14px;
+/* identical to box height */
+
+
+color: #76777E;
+}
+
+.more_btn{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+.post-card:hover .post_image_wrapper img{
+    transform: scale(1.05);
+}
+.post_image_wrapper{
+    width: 100%;
+    height: 180px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.post_image_wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.post-controls{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.post-controls-left {
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.post-controls-left button,.post-controls-right button{
+    border: 1px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.post-liked-by,.post-last-comment,.post-timestamp {
+    width: 85%;
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.post-liked-by span{
+    font-size: 12px;
+line-height: 16px;
+
+color: #1B1D28;
+
+}
+.post-last-comment span{
+    font-weight: 500;
+font-size: 12px;
+line-height: 16px;
+
+color: #1B1D28;
+}
+
+.post-timestamp{
+    font-weight: 500;
+font-size: 10px;
+line-height: 14px;
+/* identical to box height */
+
+
+color: #76777E;
+}

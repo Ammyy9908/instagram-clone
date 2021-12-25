@@ -1,0 +1,11 @@
+.bookmark_wrapper{
+    width: 98%;
+    margin: 10px auto;
+    max-height: 90%;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, .5fr) );
+    gap: 18px;
+    margin-bottom: 65px;
+    padding-bottom: 15px;
+}

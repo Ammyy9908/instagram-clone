@@ -1,0 +1,143 @@
+.story_page{
+    width: 100%;
+    height: 100vh;
+    background-color: #262626;
+    overflow: hidden;
+}
+
+.main-story-wrapper{
+    width: 75%;
+    margin: 45px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+}
+
+.story-box{
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+.story-box > button{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.story-main{
+    width: 477px;
+    height: 689px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    border-radius: 15px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.story-main:hover > img{
+    transform: scale(1.05);
+}
+
+.story-image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    object-fit: cover;
+}
+
+/* .story-gradient{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(178.26deg, rgba(4, 4, 4, 0.83) 14.69%, rgba(41, 37, 37, 0.42) 98.53%);
+    border-radius: inherit;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+} */
+
+.story-header{
+    z-index: 3;
+    width: 90%;
+    height: 48px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15px;
+    display: flex;
+    align-items: center;
+    gap:18px;
+}
+
+.story-header-author-avatar{
+    width: 40px;
+    height: 40px;
+}
+
+.story-header-author-avatar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.story-meta{
+    display: flex;
+    gap:12px;
+    align-items: center;
+}
+.story-meta > span:nth-child(1){
+    font-weight: 500;
+font-size: 20px;
+line-height: 27px;
+
+color: #FFFFFF
+}
+.story-meta > span:nth-child(2){
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    
+    color: #8F8F8F;
+}
+
+.stories-slide-progress{
+    z-index: 3;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 3px;
+    background-color: rgb(143, 143, 143);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.stories-slides-progress-value{
+    width: 10%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.story_close_btn{
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    border: 1px solid transparent;
+    background: transparent;
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+}
